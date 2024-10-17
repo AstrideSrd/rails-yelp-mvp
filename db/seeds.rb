@@ -12,7 +12,7 @@
 #  end
 
  #create samples
- Restaurant.create!([
+ Restaurant.create([
   { name: "Noodle House", address: "Chinatown", phone_number: "1111111111", category: "chinese" },
   { name: "Pasta Bar", address: "Little Italy", phone_number: "2222222222", category: "italian" },
   { name: "Sushi Place", address: "Downtown", phone_number: "3333333333", category: "japanese" },

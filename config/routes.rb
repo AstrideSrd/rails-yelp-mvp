@@ -6,9 +6,9 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   resources :restaurants do
-    resources :reviews, only: [:create] # Nested resource for reviews
+    resources :reviews, only: [:new, :create] # Nested resource for reviews
   end
 
   # Defines the root path route ("/")
-   root "restaurants#index"
+  # root "post#index"
 end
